@@ -1,0 +1,2242 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07100b">
+    <meta name="description" content="AI 世界杯预测 2026：夺冠概率、赛程预测、小组形势、国家旗帜对阵与实时数据刷新。">
+    <title>AI 世界杯预测 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+  color-scheme: dark;
+  --bg: #07100b;
+  --panel: #0c1811;
+  --panel-2: #101f16;
+  --panel-3: #14291c;
+  --line: rgba(214, 255, 222, 0.11);
+  --line-strong: rgba(214, 255, 222, 0.24);
+  --ink: #eaf6ec;
+  --dim: #8eaa96;
+  --faint: #58715f;
+  --lime: #b8f53d;
+  --lime-dark: #7fb324;
+  --gold: #ffd75e;
+  --hot: #ff7a52;
+  --draw: #7a897e;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  --disp: "Anton", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --body: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  letter-spacing: 0;
+}
+
+.video-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #040804;
+}
+
+.backdrop-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: saturate(1.05) contrast(1.06) brightness(0.56);
+  opacity: 0.78;
+  transform: scale(1.03);
+}
+
+.motion-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(110deg, rgba(8, 19, 11, 0.88), rgba(11, 42, 20, 0.62) 48%, rgba(6, 14, 10, 0.86)),
+    repeating-linear-gradient(90deg, rgba(184, 245, 61, 0.09) 0 2px, transparent 2px 130px),
+    repeating-linear-gradient(0deg, rgba(255, 215, 94, 0.05) 0 1px, transparent 1px 86px);
+  opacity: 0.78;
+}
+
+.backdrop-video {
+  display: none;
+}
+
+.has-backdrop-video .backdrop-video {
+  display: block;
+}
+
+.has-backdrop-video .motion-field {
+  opacity: 0.28;
+}
+
+.light-strip {
+  position: absolute;
+  width: 76vw;
+  height: 16vh;
+  left: -18vw;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(184, 245, 61, 0.34), rgba(255, 215, 94, 0.18), transparent);
+  filter: blur(18px);
+  transform: rotate(-12deg);
+  animation: sweepLights 9s linear infinite;
+}
+
+.strip-one {
+  top: 10vh;
+}
+
+.strip-two {
+  top: 44vh;
+  animation-duration: 12s;
+  animation-delay: -4s;
+  opacity: 0.72;
+}
+
+.strip-three {
+  top: 72vh;
+  animation-duration: 15s;
+  animation-delay: -7s;
+  opacity: 0.48;
+}
+
+.field-orbit {
+  position: absolute;
+  width: min(58vw, 760px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(184, 245, 61, 0.2);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 26px rgba(184, 245, 61, 0.16));
+  animation: pulseOrbit 6s ease-in-out infinite alternate;
+}
+
+.orbit-one {
+  left: 48vw;
+  top: -18vh;
+}
+
+.orbit-two {
+  right: 52vw;
+  bottom: -34vh;
+  animation-delay: -2s;
+}
+
+.backdrop-tint {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 8, 5, 0.28), rgba(4, 8, 5, 0.64)),
+    radial-gradient(circle at 50% 20%, rgba(184, 245, 61, 0.12), transparent 36%),
+    radial-gradient(circle at 70% 80%, rgba(0, 0, 0, 0.36), transparent 40%);
+}
+
+.no-backdrop-video .backdrop-video {
+  display: none;
+}
+
+@keyframes sweepLights {
+  from {
+    transform: translateX(-22vw) rotate(-12deg);
+  }
+  to {
+    transform: translateX(142vw) rotate(-12deg);
+  }
+}
+
+@keyframes pulseOrbit {
+  from {
+    transform: scale(0.92);
+    opacity: 0.36;
+  }
+  to {
+    transform: scale(1.06);
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .light-strip,
+  .field-orbit {
+    animation: none;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 68% 8%, rgba(184, 245, 61, 0.14), transparent 26%),
+    linear-gradient(90deg, rgba(184, 245, 61, 0.022) 0 1px, transparent 1px 120px),
+    linear-gradient(180deg, rgba(184, 245, 61, 0.014) 0 1px, transparent 1px 96px);
+}
+
+.pitch-lines {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.48;
+  background:
+    linear-gradient(rgba(184, 245, 61, 0.08), rgba(184, 245, 61, 0.08)) center 23% / min(76vw, 980px) 1px no-repeat,
+    linear-gradient(90deg, rgba(184, 245, 61, 0.08), rgba(184, 245, 61, 0.08)) center 0 / 1px 100% no-repeat,
+    radial-gradient(ellipse at center 23%, transparent 0 110px, rgba(184, 245, 61, 0.08) 111px 113px, transparent 114px);
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.wrap {
+  position: relative;
+  z-index: 3;
+  width: min(1180px, calc(100% - 28px));
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.hero {
+  min-height: min(720px, 96vh);
+  display: grid;
+  align-content: start;
+  gap: clamp(34px, 7vw, 86px);
+  padding: 18px 0 44px;
+}
+
+.topnav {
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(7, 16, 11, 0.76);
+  backdrop-filter: blur(18px);
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  color: var(--lime);
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.mark span {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  background: var(--lime);
+  color: var(--bg);
+}
+
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.nav-tabs a {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.nav-tabs a:hover {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 26px;
+  align-items: end;
+}
+
+.hero-copy {
+  display: grid;
+  gap: 20px;
+}
+
+.eyebrow,
+.sec-no,
+.status-head,
+.match-date,
+.chip,
+.prob-row,
+.flag-meta,
+.filters span,
+.team-name span,
+.stream-card time {
+  font-family: var(--mono);
+}
+
+.eyebrow {
+  color: var(--lime);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  max-width: 900px;
+  color: var(--ink);
+  font-family: var(--disp);
+  font-size: clamp(4.4rem, 12vw, 10.5rem);
+  font-weight: 400;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.lead {
+  max-width: 660px;
+  color: var(--dim);
+  font-size: clamp(1rem, 2vw, 1.22rem);
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.primary-link,
+.ghost-link,
+.detail-button,
+.tab,
+.icon-button {
+  border-radius: 8px;
+}
+
+.primary-link,
+.ghost-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line-strong);
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.primary-link {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--bg);
+}
+
+.ghost-link {
+  color: var(--lime);
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(184, 245, 61, 0.4);
+  border-radius: 8px;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-weight: 700;
+  background: rgba(7, 16, 11, 0.64);
+}
+
+.status-board,
+.section,
+.panel,
+.match-card,
+.match-dialog {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(16, 31, 22, 0.96), rgba(10, 22, 15, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.status-board {
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+}
+
+.status-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--lime);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
+
+.status-board p {
+  color: var(--dim);
+  line-height: 1.65;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.status-grid div,
+.champion-card,
+.stream-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(7, 16, 11, 0.54);
+}
+
+.status-grid div {
+  min-height: 94px;
+  padding: 12px;
+}
+
+.status-grid span,
+.metric-label {
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
+
+.status-grid strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--lime);
+  font-family: var(--disp);
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+main {
+  display: grid;
+  gap: 22px;
+}
+
+.section,
+.panel {
+  padding: clamp(16px, 3vw, 24px);
+}
+
+.sec-head {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.sec-head.compact {
+  margin-bottom: 14px;
+}
+
+.sec-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border: 1px solid var(--lime);
+  color: var(--lime);
+  font-weight: 700;
+}
+
+h2 {
+  font-family: var(--disp);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.sec-head p {
+  margin-top: 8px;
+  color: var(--dim);
+}
+
+.champion-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.champion-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 132px;
+  padding: 14px;
+}
+
+.champion-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--bar, 30%);
+  background: linear-gradient(0deg, rgba(184, 245, 61, 0.28), transparent);
+  pointer-events: none;
+}
+
+.champion-card .rank {
+  color: var(--lime);
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.champion-card h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.champion-card strong {
+  display: block;
+  margin-top: 10px;
+  color: var(--gold);
+  font-family: var(--disp);
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1.15fr minmax(150px, 190px) minmax(140px, 180px) minmax(220px, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(7, 16, 11, 0.46);
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.tab,
+.detail-button,
+.icon-button {
+  border: 1px solid var(--line);
+  background: rgba(16, 31, 22, 0.72);
+  color: var(--dim);
+}
+
+.tab {
+  min-height: 40px;
+  padding: 0 10px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
+.tab.is-active {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.filters label {
+  display: grid;
+  gap: 5px;
+}
+
+.filters span {
+  color: var(--faint);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+select,
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #07100b;
+  color: var(--ink);
+  padding: 0 10px;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.match-card {
+  display: grid;
+  gap: 13px;
+  min-height: 430px;
+  padding: 14px;
+}
+
+.match-head,
+.team-row,
+.prob-row,
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 0 9px;
+  border: 1px solid var(--line-strong);
+  color: var(--lime);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.chip.live {
+  border-color: var(--hot);
+  color: var(--hot);
+}
+
+.match-date {
+  min-width: 0;
+  color: var(--faint);
+  font-size: 0.72rem;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.teams {
+  display: grid;
+  gap: 7px;
+}
+
+.team-row {
+  min-height: 46px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  background: rgba(7, 16, 11, 0.62);
+}
+
+.team-name {
+  display: grid;
+  min-width: 0;
+}
+
+.team-name strong,
+.team-name span,
+.flag-name,
+.flag-meta {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-name strong {
+  color: var(--ink);
+}
+
+.team-name span {
+  color: var(--faint);
+  font-size: 0.72rem;
+}
+
+.score {
+  min-width: 38px;
+  color: var(--gold);
+  font-family: var(--disp);
+  font-size: 1.55rem;
+  line-height: 1;
+  text-align: right;
+}
+
+.flag-duel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.flag-card {
+  min-width: 0;
+}
+
+.flag-frame {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(184, 245, 61, 0.14), transparent 58%),
+    linear-gradient(135deg, rgba(184, 245, 61, 0.12), transparent),
+    #0a160f;
+}
+
+.flag-frame img {
+  display: block;
+  width: min(82%, 230px);
+  max-height: 72%;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.flag-placeholder {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  padding: 12px;
+  color: var(--lime);
+  font-family: var(--mono);
+  font-weight: 700;
+  text-align: center;
+}
+
+.flag-name {
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.flag-meta {
+  margin-top: 1px;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+}
+
+.probabilities {
+  display: grid;
+  gap: 8px;
+}
+
+.prob-row {
+  min-height: 22px;
+  color: var(--dim);
+  font-size: 0.76rem;
+}
+
+.prob-track {
+  flex: 1;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(214, 255, 222, 0.08);
+}
+
+.prob-fill {
+  height: 100%;
+}
+
+.prob-fill.home {
+  background: var(--lime);
+}
+
+.prob-fill.draw {
+  background: var(--draw);
+}
+
+.prob-fill.away {
+  background: var(--hot);
+}
+
+.analysis {
+  min-height: 66px;
+  color: var(--dim);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.detail-button {
+  min-height: 40px;
+  margin-top: auto;
+  border-color: var(--line-strong);
+  color: var(--lime);
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.detail-button:hover,
+.icon-button:hover {
+  border-color: var(--lime);
+  color: var(--ink);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  gap: 14px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.standings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  max-height: 760px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.standings-group {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(7, 16, 11, 0.5);
+  padding: 10px;
+}
+
+.standings-group h3 {
+  margin: 0 0 8px;
+  color: var(--lime);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.standings table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.standings th,
+.standings td {
+  padding: 6px 5px;
+  border-bottom: 1px solid rgba(214, 255, 222, 0.08);
+  text-align: right;
+}
+
+.standings th:first-child,
+.standings td:first-child {
+  text-align: left;
+}
+
+.standings tr:first-child td:first-child {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.insight-stream {
+  display: grid;
+  gap: 10px;
+}
+
+.stream-card {
+  padding: 12px;
+}
+
+.stream-card time {
+  color: var(--lime);
+  font-size: 0.72rem;
+}
+
+.stream-card h3 {
+  margin-top: 7px;
+  font-size: 0.98rem;
+}
+
+.stream-card p {
+  margin-top: 7px;
+  color: var(--dim);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.match-dialog {
+  width: min(900px, calc(100% - 28px));
+  max-height: min(780px, calc(100% - 28px));
+  padding: 0;
+  color: var(--ink);
+}
+
+.match-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dialog-header {
+  padding: 18px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(7, 16, 11, 0.82);
+}
+
+.dialog-header p {
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
+.dialog-header h2 {
+  margin-top: 4px;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  color: var(--lime);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+#dialog-body {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+}
+
+.dialog-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 16px;
+}
+
+.factor-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.factor-list li,
+.empty {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(7, 16, 11, 0.52);
+}
+
+.factor-list li {
+  padding: 10px 12px;
+  color: var(--dim);
+}
+
+.empty {
+  padding: 28px;
+  color: var(--dim);
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .hero-grid,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .champion-grid,
+  .match-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .wrap {
+    width: min(100% - 18px, 1180px);
+  }
+
+  .topnav {
+    position: static;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .nav-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: stretch;
+  }
+
+  .nav-tabs a {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: clamp(3.3rem, 19vw, 5.6rem);
+  }
+
+  .filters,
+  .champion-grid,
+  .match-grid,
+  .standings,
+  .dialog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 470px) {
+  .hero {
+    min-height: 0;
+  }
+
+  .status-grid,
+  .flag-duel {
+    grid-template-columns: 1fr;
+  }
+
+  .section,
+  .panel {
+    padding: 14px;
+  }
+}
+
+</style>
+  </head>
+  <body>
+    <div class="video-backdrop" aria-hidden="true">
+      <video id="worldcup-bg-video" class="backdrop-video" autoplay muted loop playsinline poster="./assets/media/worldcup-poster.jpg">
+        <source src="./assets/media/worldcup-bg.mp4" type="video/mp4">
+      </video>
+      <div class="motion-field">
+        <span class="light-strip strip-one"></span>
+        <span class="light-strip strip-two"></span>
+        <span class="light-strip strip-three"></span>
+        <span class="field-orbit orbit-one"></span>
+        <span class="field-orbit orbit-two"></span>
+      </div>
+      <div class="backdrop-tint"></div>
+    </div>
+    <div class="pitch-lines" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <header class="hero" id="overview">
+        <nav class="topnav" aria-label="页面导航">
+          <a class="mark" href="#overview" aria-label="回到顶部">
+            <span>AI</span>
+            <strong>WC26</strong>
+          </a>
+          <div class="nav-tabs">
+            <a href="#overview">总览</a>
+            <a href="#schedule">赛程</a>
+            <a href="#groups">小组</a>
+            <a href="#rank">夺冠概率</a>
+            <a href="#stream">预测流</a>
+          </div>
+        </nav>
+
+        <section class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">WORLD CUP 2026 AI FORECAST</p>
+            <h1>AI 世界杯预测 2026</h1>
+            <p class="lead">48 强实时形势、104 场逐场概率、小组出线压力和国家旗帜对阵，全部整理成一个可以公开访问的预测仪表盘。</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#schedule">查看赛程预测</a>
+              <a class="ghost-link" href="#rank">夺冠概率榜</a>
+              <a class="source-link" href="https://v.douyin.com/ZTOn9vwQRGo/" target="_blank" rel="noopener">抖音灵感视频</a>
+            </div>
+          </div>
+
+          <aside class="status-board" aria-label="赛事状态">
+            <div class="status-head">
+              <span>LIVE DATA</span>
+              <strong id="last-updated">--</strong>
+            </div>
+            <p id="data-status">数据加载中</p>
+            <div class="status-grid">
+              <div><span>Matches</span><strong id="metric-total">104</strong></div>
+              <div><span>Today</span><strong id="metric-today">0</strong></div>
+              <div><span>Done</span><strong id="metric-finished">0</strong></div>
+              <div><span>Model</span><strong id="metric-model">ELO</strong></div>
+            </div>
+          </aside>
+        </section>
+      </header>
+
+      <main>
+        <section class="section" id="rank">
+          <div class="sec-head">
+            <span class="sec-no">01</span>
+            <div>
+              <h2>夺冠概率榜</h2>
+              <p>基于球队强度、分组路径和当前积分形势的透明模型估算。</p>
+            </div>
+          </div>
+          <div id="champion-grid" class="champion-grid"></div>
+        </section>
+
+        <section class="section" id="schedule">
+          <div class="sec-head">
+            <span class="sec-no">02</span>
+            <div>
+              <h2>逐场比分预测</h2>
+              <p id="match-count">--</p>
+            </div>
+          </div>
+
+          <div class="filters" aria-label="筛选比赛">
+            <div class="tabs" role="tablist" aria-label="比赛范围">
+              <button class="tab is-active" type="button" data-filter="today">今日</button>
+              <button class="tab" type="button" data-filter="all">全部</button>
+              <button class="tab" type="button" data-filter="group">小组赛</button>
+              <button class="tab" type="button" data-filter="knockout">淘汰赛</button>
+            </div>
+            <label>
+              <span>球队</span>
+              <select id="team-filter"></select>
+            </label>
+            <label>
+              <span>小组</span>
+              <select id="group-filter">
+                <option value="all">全部小组</option>
+              </select>
+            </label>
+            <label class="search">
+              <span>搜索</span>
+              <input id="search-input" type="search" placeholder="球队 / 球员 / 城市">
+            </label>
+          </div>
+
+          <div id="match-grid" class="match-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="section two-col" id="groups">
+          <div class="panel">
+            <div class="sec-head compact">
+              <span class="sec-no">03</span>
+              <div>
+                <h2>小组形势</h2>
+                <p>官方赛果刷新后自动重排积分榜。</p>
+              </div>
+            </div>
+            <div id="standings" class="standings"></div>
+          </div>
+
+          <div class="panel" id="stream">
+            <div class="sec-head compact">
+              <span class="sec-no">04</span>
+              <div>
+                <h2>AI 预测流</h2>
+                <p id="model-version">transparent-elo-v1</p>
+              </div>
+            </div>
+            <div id="insight-stream" class="insight-stream"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="match-dialog" class="match-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <div>
+          <p id="dialog-kicker"></p>
+          <h2 id="dialog-title"></h2>
+        </div>
+        <button class="icon-button" type="button" id="dialog-close" aria-label="关闭">×</button>
+      </div>
+      <div id="dialog-body"></div>
+    </dialog>
+
+    <template id="match-card-template">
+      <article class="match-card">
+        <div class="match-head">
+          <span class="chip"></span>
+          <span class="match-date"></span>
+        </div>
+        <div class="teams"></div>
+        <div class="flag-duel"></div>
+        <div class="probabilities"></div>
+        <p class="analysis"></p>
+        <button class="detail-button" type="button">查看 AI 分析</button>
+      </article>
+    </template>
+
+    <script type="application/json" id="team-profiles-json">
+{
+  "generatedAt": "2026-06-18T00:00:00Z",
+  "dataMode": "static-seed; official API refresh replaces this file",
+  "source": "Seed data for offline preview. Configure FOOTBALL_DATA_TOKEN for live football-data.org updates.",
+  "teams": [
+    {"code":"MEX","name":"Mexico","zhName":"墨西哥","group":"A","position":1,"fifaRank":14,"strength":1840,"focalPlayerId":"raul-jimenez","focalPlayer":"Raul Jimenez"},
+    {"code":"RSA","name":"South Africa","zhName":"南非","group":"A","position":2,"fifaRank":60,"strength":1540,"focalPlayerId":"ronwen-williams","focalPlayer":"Ronwen Williams"},
+    {"code":"KOR","name":"Korea Republic","zhName":"韩国","group":"A","position":3,"fifaRank":25,"strength":1720,"focalPlayerId":"son-heung-min","focalPlayer":"Son Heung-min"},
+    {"code":"CZE","name":"Czechia","zhName":"捷克","group":"A","position":4,"fifaRank":40,"strength":1665,"focalPlayerId":"patrik-schick","focalPlayer":"Patrik Schick"},
+    {"code":"CAN","name":"Canada","zhName":"加拿大","group":"B","position":1,"fifaRank":27,"strength":1705,"focalPlayerId":"alphonso-davies","focalPlayer":"Alphonso Davies"},
+    {"code":"BIH","name":"Bosnia and Herzegovina","zhName":"波黑","group":"B","position":2,"fifaRank":71,"strength":1510,"focalPlayerId":"edin-dzeko","focalPlayer":"Edin Dzeko"},
+    {"code":"QAT","name":"Qatar","zhName":"卡塔尔","group":"B","position":3,"fifaRank":51,"strength":1600,"focalPlayerId":"akram-afif","focalPlayer":"Akram Afif"},
+    {"code":"SUI","name":"Switzerland","zhName":"瑞士","group":"B","position":4,"fifaRank":17,"strength":1805,"focalPlayerId":"granit-xhaka","focalPlayer":"Granit Xhaka"},
+    {"code":"BRA","name":"Brazil","zhName":"巴西","group":"C","position":1,"fifaRank":5,"strength":1905,"focalPlayerId":"vinicius-junior","focalPlayer":"Vinicius Junior"},
+    {"code":"MAR","name":"Morocco","zhName":"摩洛哥","group":"C","position":2,"fifaRank":11,"strength":1830,"focalPlayerId":"achraf-hakimi","focalPlayer":"Achraf Hakimi"},
+    {"code":"HAI","name":"Haiti","zhName":"海地","group":"C","position":3,"fifaRank":86,"strength":1450,"focalPlayerId":"duckens-nazon","focalPlayer":"Duckens Nazon"},
+    {"code":"SCO","name":"Scotland","zhName":"苏格兰","group":"C","position":4,"fifaRank":39,"strength":1668,"focalPlayerId":"scott-mctominay","focalPlayer":"Scott McTominay"},
+    {"code":"USA","name":"United States","zhName":"美国","group":"D","position":1,"fifaRank":15,"strength":1815,"focalPlayerId":"christian-pulisic","focalPlayer":"Christian Pulisic"},
+    {"code":"PAR","name":"Paraguay","zhName":"巴拉圭","group":"D","position":2,"fifaRank":42,"strength":1650,"focalPlayerId":"miguel-almiron","focalPlayer":"Miguel Almiron"},
+    {"code":"AUS","name":"Australia","zhName":"澳大利亚","group":"D","position":3,"fifaRank":29,"strength":1700,"focalPlayerId":"mathew-ryan","focalPlayer":"Mathew Ryan"},
+    {"code":"TUR","name":"Turkiye","zhName":"土耳其","group":"D","position":4,"fifaRank":26,"strength":1735,"focalPlayerId":"hakan-calhanoglu","focalPlayer":"Hakan Calhanoglu"},
+    {"code":"GER","name":"Germany","zhName":"德国","group":"E","position":1,"fifaRank":9,"strength":1865,"focalPlayerId":"jamal-musiala","focalPlayer":"Jamal Musiala"},
+    {"code":"CUW","name":"Curacao","zhName":"库拉索","group":"E","position":2,"fifaRank":82,"strength":1470,"focalPlayerId":"juninho-bacuna","focalPlayer":"Juninho Bacuna"},
+    {"code":"CIV","name":"Cote d'Ivoire","zhName":"科特迪瓦","group":"E","position":3,"fifaRank":34,"strength":1698,"focalPlayerId":"franck-kessie","focalPlayer":"Franck Kessie"},
+    {"code":"ECU","name":"Ecuador","zhName":"厄瓜多尔","group":"E","position":4,"fifaRank":24,"strength":1755,"focalPlayerId":"moises-caicedo","focalPlayer":"Moises Caicedo"},
+    {"code":"NED","name":"Netherlands","zhName":"荷兰","group":"F","position":1,"fifaRank":7,"strength":1878,"focalPlayerId":"virgil-van-dijk","focalPlayer":"Virgil van Dijk"},
+    {"code":"JPN","name":"Japan","zhName":"日本","group":"F","position":2,"fifaRank":18,"strength":1795,"focalPlayerId":"takefusa-kubo","focalPlayer":"Takefusa Kubo"},
+    {"code":"SWE","name":"Sweden","zhName":"瑞典","group":"F","position":3,"fifaRank":30,"strength":1702,"focalPlayerId":"alexander-isak","focalPlayer":"Alexander Isak"},
+    {"code":"TUN","name":"Tunisia","zhName":"突尼斯","group":"F","position":4,"fifaRank":42,"strength":1655,"focalPlayerId":"ellyes-skhiri","focalPlayer":"Ellyes Skhiri"},
+    {"code":"BEL","name":"Belgium","zhName":"比利时","group":"G","position":1,"fifaRank":8,"strength":1870,"focalPlayerId":"kevin-de-bruyne","focalPlayer":"Kevin De Bruyne"},
+    {"code":"EGY","name":"Egypt","zhName":"埃及","group":"G","position":2,"fifaRank":35,"strength":1690,"focalPlayerId":"mohamed-salah","focalPlayer":"Mohamed Salah"},
+    {"code":"IRN","name":"IR Iran","zhName":"伊朗","group":"G","position":3,"fifaRank":20,"strength":1780,"focalPlayerId":"mehdi-taremi","focalPlayer":"Mehdi Taremi"},
+    {"code":"NZL","name":"New Zealand","zhName":"新西兰","group":"G","position":4,"fifaRank":85,"strength":1460,"focalPlayerId":"chris-wood","focalPlayer":"Chris Wood"},
+    {"code":"ESP","name":"Spain","zhName":"西班牙","group":"H","position":1,"fifaRank":1,"strength":1940,"focalPlayerId":"rodri","focalPlayer":"Rodri"},
+    {"code":"CPV","name":"Cabo Verde","zhName":"佛得角","group":"H","position":2,"fifaRank":68,"strength":1518,"focalPlayerId":"ryan-mendes","focalPlayer":"Ryan Mendes"},
+    {"code":"KSA","name":"Saudi Arabia","zhName":"沙特阿拉伯","group":"H","position":3,"fifaRank":60,"strength":1545,"focalPlayerId":"salem-al-dawsari","focalPlayer":"Salem Al-Dawsari"},
+    {"code":"URU","name":"Uruguay","zhName":"乌拉圭","group":"H","position":4,"fifaRank":16,"strength":1810,"focalPlayerId":"federico-valverde","focalPlayer":"Federico Valverde"},
+    {"code":"FRA","name":"France","zhName":"法国","group":"I","position":1,"fifaRank":3,"strength":1925,"focalPlayerId":"kylian-mbappe","focalPlayer":"Kylian Mbappe"},
+    {"code":"SEN","name":"Senegal","zhName":"塞内加尔","group":"I","position":2,"fifaRank":19,"strength":1785,"focalPlayerId":"sadio-mane","focalPlayer":"Sadio Mane"},
+    {"code":"IRQ","name":"Iraq","zhName":"伊拉克","group":"I","position":3,"fifaRank":58,"strength":1560,"focalPlayerId":"aymen-hussein","focalPlayer":"Aymen Hussein"},
+    {"code":"NOR","name":"Norway","zhName":"挪威","group":"I","position":4,"fifaRank":36,"strength":1685,"focalPlayerId":"erling-haaland","focalPlayer":"Erling Haaland"},
+    {"code":"ARG","name":"Argentina","zhName":"阿根廷","group":"J","position":1,"fifaRank":2,"strength":1930,"focalPlayerId":"lionel-messi","focalPlayer":"Lionel Messi"},
+    {"code":"ALG","name":"Algeria","zhName":"阿尔及利亚","group":"J","position":2,"fifaRank":35,"strength":1688,"focalPlayerId":"riyad-mahrez","focalPlayer":"Riyad Mahrez"},
+    {"code":"AUT","name":"Austria","zhName":"奥地利","group":"J","position":3,"fifaRank":22,"strength":1762,"focalPlayerId":"david-alaba","focalPlayer":"David Alaba"},
+    {"code":"JOR","name":"Jordan","zhName":"约旦","group":"J","position":4,"fifaRank":66,"strength":1525,"focalPlayerId":"musa-al-taamari","focalPlayer":"Musa Al-Taamari"},
+    {"code":"POR","name":"Portugal","zhName":"葡萄牙","group":"K","position":1,"fifaRank":6,"strength":1890,"focalPlayerId":"cristiano-ronaldo","focalPlayer":"Cristiano Ronaldo"},
+    {"code":"COD","name":"DR Congo","zhName":"刚果民主共和国","group":"K","position":2,"fifaRank":56,"strength":1570,"focalPlayerId":"yoane-wissa","focalPlayer":"Yoane Wissa"},
+    {"code":"UZB","name":"Uzbekistan","zhName":"乌兹别克斯坦","group":"K","position":3,"fifaRank":50,"strength":1605,"focalPlayerId":"eldor-shomurodov","focalPlayer":"Eldor Shomurodov"},
+    {"code":"COL","name":"Colombia","zhName":"哥伦比亚","group":"K","position":4,"fifaRank":13,"strength":1825,"focalPlayerId":"luis-diaz","focalPlayer":"Luis Diaz"},
+    {"code":"ENG","name":"England","zhName":"英格兰","group":"L","position":1,"fifaRank":4,"strength":1910,"focalPlayerId":"harry-kane","focalPlayer":"Harry Kane"},
+    {"code":"CRO","name":"Croatia","zhName":"克罗地亚","group":"L","position":2,"fifaRank":10,"strength":1842,"focalPlayerId":"luka-modric","focalPlayer":"Luka Modric"},
+    {"code":"GHA","name":"Ghana","zhName":"加纳","group":"L","position":3,"fifaRank":72,"strength":1508,"focalPlayerId":"mohammed-kudus","focalPlayer":"Mohammed Kudus"},
+    {"code":"PAN","name":"Panama","zhName":"巴拿马","group":"L","position":4,"fifaRank":39,"strength":1645,"focalPlayerId":"adalberto-carrasquilla","focalPlayer":"Adalberto Carrasquilla"}
+  ]
+}
+
+</script>
+<script type="application/json" id="worldcup-live-json">
+{
+  "generatedAt": "2026-06-18T00:00:00Z",
+  "dataMode": "静态种子数据：等待 GitHub Actions 使用 FOOTBALL_DATA_TOKEN 刷新",
+  "source": "Seed schedule for offline preview. Live scores come from football-data.org after deployment.",
+  "groupFixtures": [
+    ["M01","A","2026-06-11","MEX","RSA","Mexico City Stadium"],
+    ["M02","A","2026-06-11","KOR","CZE","Estadio Guadalajara"],
+    ["M03","B","2026-06-12","CAN","BIH","Toronto Stadium"],
+    ["M04","D","2026-06-12","USA","PAR","Los Angeles Stadium"],
+    ["M05","C","2026-06-13","HAI","SCO","Boston Stadium"],
+    ["M06","D","2026-06-13","AUS","TUR","BC Place Vancouver"],
+    ["M07","C","2026-06-13","BRA","MAR","New York New Jersey Stadium"],
+    ["M08","B","2026-06-13","QAT","SUI","San Francisco Bay Area Stadium"],
+    ["M09","E","2026-06-14","CIV","ECU","Philadelphia Stadium"],
+    ["M10","E","2026-06-14","GER","CUW","Houston Stadium"],
+    ["M11","F","2026-06-14","NED","JPN","Dallas Stadium"],
+    ["M12","F","2026-06-14","SWE","TUN","Estadio Monterrey"],
+    ["M13","H","2026-06-15","KSA","URU","Miami Stadium"],
+    ["M14","H","2026-06-15","ESP","CPV","Atlanta Stadium"],
+    ["M15","G","2026-06-15","IRN","NZL","Los Angeles Stadium"],
+    ["M16","G","2026-06-15","BEL","EGY","Seattle Stadium"],
+    ["M17","I","2026-06-16","FRA","SEN","New York New Jersey Stadium"],
+    ["M18","I","2026-06-16","IRQ","NOR","Boston Stadium"],
+    ["M19","J","2026-06-16","ARG","ALG","Kansas City Stadium"],
+    ["M20","J","2026-06-16","AUT","JOR","San Francisco Bay Area Stadium"],
+    ["M21","L","2026-06-17","GHA","PAN","Toronto Stadium"],
+    ["M22","L","2026-06-17","ENG","CRO","Dallas Stadium"],
+    ["M23","K","2026-06-17","POR","COD","Houston Stadium"],
+    ["M24","K","2026-06-17","UZB","COL","Mexico City Stadium"],
+    ["M25","A","2026-06-18","CZE","RSA","Atlanta Stadium"],
+    ["M26","B","2026-06-18","SUI","BIH","Los Angeles Stadium"],
+    ["M27","B","2026-06-18","CAN","QAT","BC Place Vancouver"],
+    ["M28","A","2026-06-18","MEX","KOR","Estadio Guadalajara"],
+    ["M29","C","2026-06-19","BRA","HAI","Philadelphia Stadium"],
+    ["M30","C","2026-06-19","SCO","MAR","Boston Stadium"],
+    ["M31","D","2026-06-19","TUR","PAR","San Francisco Bay Area Stadium"],
+    ["M32","D","2026-06-19","USA","AUS","Seattle Stadium"],
+    ["M33","E","2026-06-20","GER","CIV","Toronto Stadium"],
+    ["M34","E","2026-06-20","ECU","CUW","Kansas City Stadium"],
+    ["M35","F","2026-06-20","NED","SWE","Houston Stadium"],
+    ["M36","F","2026-06-20","TUN","JPN","Estadio Monterrey"],
+    ["M37","H","2026-06-21","URU","CPV","Miami Stadium"],
+    ["M38","H","2026-06-21","ESP","KSA","Atlanta Stadium"],
+    ["M39","G","2026-06-21","BEL","IRN","Los Angeles Stadium"],
+    ["M40","G","2026-06-21","NZL","EGY","BC Place Vancouver"],
+    ["M41","I","2026-06-22","NOR","SEN","New York New Jersey Stadium"],
+    ["M42","I","2026-06-22","FRA","IRQ","Philadelphia Stadium"],
+    ["M43","J","2026-06-22","ARG","AUT","Dallas Stadium"],
+    ["M44","J","2026-06-22","JOR","ALG","San Francisco Bay Area Stadium"],
+    ["M45","L","2026-06-23","ENG","GHA","Boston Stadium"],
+    ["M46","L","2026-06-23","PAN","CRO","Toronto Stadium"],
+    ["M47","K","2026-06-23","POR","UZB","Houston Stadium"],
+    ["M48","K","2026-06-23","COL","COD","Estadio Guadalajara"],
+    ["M49","C","2026-06-24","SCO","BRA","Miami Stadium"],
+    ["M50","C","2026-06-24","MAR","HAI","Atlanta Stadium"],
+    ["M51","B","2026-06-24","SUI","CAN","BC Place Vancouver"],
+    ["M52","B","2026-06-24","BIH","QAT","Seattle Stadium"],
+    ["M53","A","2026-06-24","CZE","MEX","Mexico City Stadium"],
+    ["M54","A","2026-06-24","RSA","KOR","Estadio Monterrey"],
+    ["M55","E","2026-06-25","CUW","CIV","Philadelphia Stadium"],
+    ["M56","E","2026-06-25","ECU","GER","New York New Jersey Stadium"],
+    ["M57","F","2026-06-25","JPN","SWE","Dallas Stadium"],
+    ["M58","F","2026-06-25","TUN","NED","Kansas City Stadium"],
+    ["M59","D","2026-06-25","TUR","USA","Los Angeles Stadium"],
+    ["M60","D","2026-06-25","PAR","AUS","San Francisco Bay Area Stadium"],
+    ["M61","I","2026-06-26","NOR","FRA","Boston Stadium"],
+    ["M62","I","2026-06-26","SEN","IRQ","Toronto Stadium"],
+    ["M63","G","2026-06-26","EGY","IRN","Seattle Stadium"],
+    ["M64","G","2026-06-26","NZL","BEL","BC Place Vancouver"],
+    ["M65","H","2026-06-26","CPV","KSA","Houston Stadium"],
+    ["M66","H","2026-06-26","URU","ESP","Estadio Guadalajara"],
+    ["M67","L","2026-06-27","PAN","ENG","New York New Jersey Stadium"],
+    ["M68","L","2026-06-27","CRO","GHA","Philadelphia Stadium"],
+    ["M69","J","2026-06-27","ALG","AUT","Kansas City Stadium"],
+    ["M70","J","2026-06-27","JOR","ARG","Dallas Stadium"],
+    ["M71","K","2026-06-27","COL","POR","Miami Stadium"],
+    ["M72","K","2026-06-27","COD","UZB","Atlanta Stadium"]
+  ],
+  "knockoutFixtures": [
+    ["M73","Round of 32","2026-06-28","晋级队 1","晋级队 2"],
+    ["M74","Round of 32","2026-06-28","晋级队 3","晋级队 4"],
+    ["M75","Round of 32","2026-06-29","晋级队 5","晋级队 6"],
+    ["M76","Round of 32","2026-06-29","晋级队 7","晋级队 8"],
+    ["M77","Round of 32","2026-06-30","晋级队 9","晋级队 10"],
+    ["M78","Round of 32","2026-06-30","晋级队 11","晋级队 12"],
+    ["M79","Round of 32","2026-07-01","晋级队 13","晋级队 14"],
+    ["M80","Round of 32","2026-07-01","晋级队 15","晋级队 16"],
+    ["M81","Round of 32","2026-07-02","晋级队 17","晋级队 18"],
+    ["M82","Round of 32","2026-07-02","晋级队 19","晋级队 20"],
+    ["M83","Round of 32","2026-07-03","晋级队 21","晋级队 22"],
+    ["M84","Round of 32","2026-07-03","晋级队 23","晋级队 24"],
+    ["M85","Round of 32","2026-07-03","晋级队 25","晋级队 26"],
+    ["M86","Round of 32","2026-07-03","晋级队 27","晋级队 28"],
+    ["M87","Round of 32","2026-07-03","晋级队 29","晋级队 30"],
+    ["M88","Round of 32","2026-07-03","晋级队 31","晋级队 32"],
+    ["M89","Round of 16","2026-07-04","M73 胜者","M74 胜者"],
+    ["M90","Round of 16","2026-07-04","M75 胜者","M76 胜者"],
+    ["M91","Round of 16","2026-07-05","M77 胜者","M78 胜者"],
+    ["M92","Round of 16","2026-07-05","M79 胜者","M80 胜者"],
+    ["M93","Round of 16","2026-07-06","M81 胜者","M82 胜者"],
+    ["M94","Round of 16","2026-07-06","M83 胜者","M84 胜者"],
+    ["M95","Round of 16","2026-07-07","M85 胜者","M86 胜者"],
+    ["M96","Round of 16","2026-07-07","M87 胜者","M88 胜者"],
+    ["M97","Quarterfinal","2026-07-09","M89 胜者","M90 胜者"],
+    ["M98","Quarterfinal","2026-07-10","M91 胜者","M92 胜者"],
+    ["M99","Quarterfinal","2026-07-11","M93 胜者","M94 胜者"],
+    ["M100","Quarterfinal","2026-07-11","M95 胜者","M96 胜者"],
+    ["M101","Semifinal","2026-07-14","M97 胜者","M98 胜者"],
+    ["M102","Semifinal","2026-07-15","M99 胜者","M100 胜者"],
+    ["M103","Third place","2026-07-18","半决赛负者","半决赛负者"],
+    ["M104","Final","2026-07-19","半决赛胜者","半决赛胜者"]
+  ],
+  "results": []
+}
+
+</script>
+<script type="application/json" id="predictions-json">
+{
+  "generatedAt": "2026-06-18T00:00:00Z",
+  "modelVersion": "transparent-elo-v1",
+  "dataMode": "client-computed seed predictions; refresh script writes server-generated predictions",
+  "predictions": []
+}
+
+</script>
+<script>
+const FALLBACK_TEAMS = [
+  ["MEX", "Mexico", "墨西哥", "A", 1, 14, 1840, "raul-jimenez", "Raul Jimenez"],
+  ["RSA", "South Africa", "南非", "A", 2, 60, 1540, "ronwen-williams", "Ronwen Williams"],
+  ["KOR", "Korea Republic", "韩国", "A", 3, 25, 1720, "son-heung-min", "Son Heung-min"],
+  ["CZE", "Czechia", "捷克", "A", 4, 40, 1665, "patrik-schick", "Patrik Schick"],
+  ["CAN", "Canada", "加拿大", "B", 1, 27, 1705, "alphonso-davies", "Alphonso Davies"],
+  ["BIH", "Bosnia and Herzegovina", "波黑", "B", 2, 71, 1510, "edin-dzeko", "Edin Dzeko"],
+  ["QAT", "Qatar", "卡塔尔", "B", 3, 51, 1600, "akram-afif", "Akram Afif"],
+  ["SUI", "Switzerland", "瑞士", "B", 4, 17, 1805, "granit-xhaka", "Granit Xhaka"],
+  ["BRA", "Brazil", "巴西", "C", 1, 5, 1905, "vinicius-junior", "Vinicius Junior"],
+  ["MAR", "Morocco", "摩洛哥", "C", 2, 11, 1830, "achraf-hakimi", "Achraf Hakimi"],
+  ["HAI", "Haiti", "海地", "C", 3, 86, 1450, "duckens-nazon", "Duckens Nazon"],
+  ["SCO", "Scotland", "苏格兰", "C", 4, 39, 1668, "scott-mctominay", "Scott McTominay"],
+  ["USA", "United States", "美国", "D", 1, 15, 1815, "christian-pulisic", "Christian Pulisic"],
+  ["PAR", "Paraguay", "巴拉圭", "D", 2, 42, 1650, "miguel-almiron", "Miguel Almiron"],
+  ["AUS", "Australia", "澳大利亚", "D", 3, 29, 1700, "mathew-ryan", "Mathew Ryan"],
+  ["TUR", "Turkiye", "土耳其", "D", 4, 26, 1735, "hakan-calhanoglu", "Hakan Calhanoglu"],
+  ["GER", "Germany", "德国", "E", 1, 9, 1865, "jamal-musiala", "Jamal Musiala"],
+  ["CUW", "Curacao", "库拉索", "E", 2, 82, 1470, "juninho-bacuna", "Juninho Bacuna"],
+  ["CIV", "Cote d'Ivoire", "科特迪瓦", "E", 3, 34, 1698, "franck-kessie", "Franck Kessie"],
+  ["ECU", "Ecuador", "厄瓜多尔", "E", 4, 24, 1755, "moises-caicedo", "Moises Caicedo"],
+  ["NED", "Netherlands", "荷兰", "F", 1, 7, 1878, "virgil-van-dijk", "Virgil van Dijk"],
+  ["JPN", "Japan", "日本", "F", 2, 18, 1795, "takefusa-kubo", "Takefusa Kubo"],
+  ["SWE", "Sweden", "瑞典", "F", 3, 30, 1702, "alexander-isak", "Alexander Isak"],
+  ["TUN", "Tunisia", "突尼斯", "F", 4, 42, 1655, "ellyes-skhiri", "Ellyes Skhiri"],
+  ["BEL", "Belgium", "比利时", "G", 1, 8, 1870, "kevin-de-bruyne", "Kevin De Bruyne"],
+  ["EGY", "Egypt", "埃及", "G", 2, 35, 1690, "mohamed-salah", "Mohamed Salah"],
+  ["IRN", "IR Iran", "伊朗", "G", 3, 20, 1780, "mehdi-taremi", "Mehdi Taremi"],
+  ["NZL", "New Zealand", "新西兰", "G", 4, 85, 1460, "chris-wood", "Chris Wood"],
+  ["ESP", "Spain", "西班牙", "H", 1, 1, 1940, "rodri", "Rodri"],
+  ["CPV", "Cabo Verde", "佛得角", "H", 2, 68, 1518, "ryan-mendes", "Ryan Mendes"],
+  ["KSA", "Saudi Arabia", "沙特阿拉伯", "H", 3, 60, 1545, "salem-al-dawsari", "Salem Al-Dawsari"],
+  ["URU", "Uruguay", "乌拉圭", "H", 4, 16, 1810, "federico-valverde", "Federico Valverde"],
+  ["FRA", "France", "法国", "I", 1, 3, 1925, "kylian-mbappe", "Kylian Mbappe"],
+  ["SEN", "Senegal", "塞内加尔", "I", 2, 19, 1785, "sadio-mane", "Sadio Mane"],
+  ["IRQ", "Iraq", "伊拉克", "I", 3, 58, 1560, "aymen-hussein", "Aymen Hussein"],
+  ["NOR", "Norway", "挪威", "I", 4, 36, 1685, "erling-haaland", "Erling Haaland"],
+  ["ARG", "Argentina", "阿根廷", "J", 1, 2, 1930, "lionel-messi", "Lionel Messi"],
+  ["ALG", "Algeria", "阿尔及利亚", "J", 2, 35, 1688, "riyad-mahrez", "Riyad Mahrez"],
+  ["AUT", "Austria", "奥地利", "J", 3, 22, 1762, "david-alaba", "David Alaba"],
+  ["JOR", "Jordan", "约旦", "J", 4, 66, 1525, "musa-al-taamari", "Musa Al-Taamari"],
+  ["POR", "Portugal", "葡萄牙", "K", 1, 6, 1890, "cristiano-ronaldo", "Cristiano Ronaldo"],
+  ["COD", "DR Congo", "刚果民主共和国", "K", 2, 56, 1570, "yoane-wissa", "Yoane Wissa"],
+  ["UZB", "Uzbekistan", "乌兹别克斯坦", "K", 3, 50, 1605, "eldor-shomurodov", "Eldor Shomurodov"],
+  ["COL", "Colombia", "哥伦比亚", "K", 4, 13, 1825, "luis-diaz", "Luis Diaz"],
+  ["ENG", "England", "英格兰", "L", 1, 4, 1910, "harry-kane", "Harry Kane"],
+  ["CRO", "Croatia", "克罗地亚", "L", 2, 10, 1842, "luka-modric", "Luka Modric"],
+  ["GHA", "Ghana", "加纳", "L", 3, 72, 1508, "mohammed-kudus", "Mohammed Kudus"],
+  ["PAN", "Panama", "巴拿马", "L", 4, 39, 1645, "adalberto-carrasquilla", "Adalberto Carrasquilla"]
+].map(([code, name, zhName, group, position, fifaRank, strength, focalPlayerId, focalPlayer]) => ({
+  code, name, zhName, group, position, fifaRank, strength, focalPlayerId, focalPlayer
+}));
+
+const FALLBACK_PHOTOS = Object.fromEntries(FALLBACK_TEAMS.map((team) => [
+  team.focalPlayerId,
+  {
+    playerId: team.focalPlayerId,
+    name: team.focalPlayer,
+    page: team.focalPlayer.normalize("NFD").replace(/[\u0300-\u036f]/g, ""),
+    sourcePage: `https://en.wikipedia.org/wiki/${team.focalPlayer.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replaceAll(" ", "_")}`,
+    author: "Wikimedia API 待同步",
+    license: "见来源页授权信息",
+    url: ""
+  }
+]));
+
+const FLAG_CODES = {
+  ALG: "dz",
+  ARG: "ar",
+  AUS: "au",
+  AUT: "at",
+  BEL: "be",
+  BIH: "ba",
+  BRA: "br",
+  CAN: "ca",
+  CIV: "ci",
+  COD: "cd",
+  COL: "co",
+  CPV: "cv",
+  CRO: "hr",
+  CUW: "cw",
+  CZE: "cz",
+  ECU: "ec",
+  EGY: "eg",
+  ENG: "gb-eng",
+  ESP: "es",
+  FRA: "fr",
+  GER: "de",
+  GHA: "gh",
+  HAI: "ht",
+  IRN: "ir",
+  IRQ: "iq",
+  JOR: "jo",
+  JPN: "jp",
+  KOR: "kr",
+  KSA: "sa",
+  MAR: "ma",
+  MEX: "mx",
+  NED: "nl",
+  NOR: "no",
+  NZL: "nz",
+  PAN: "pa",
+  PAR: "py",
+  POR: "pt",
+  QAT: "qa",
+  RSA: "za",
+  SCO: "gb-sct",
+  SEN: "sn",
+  SUI: "ch",
+  SWE: "se",
+  TUN: "tn",
+  TUR: "tr",
+  URU: "uy",
+  USA: "us",
+  UZB: "uz"
+};
+
+const GROUP_FIXTURES = [
+  ["M01", "A", "2026-06-11", "MEX", "RSA", "Mexico City Stadium"],
+  ["M02", "A", "2026-06-11", "KOR", "CZE", "Estadio Guadalajara"],
+  ["M03", "B", "2026-06-12", "CAN", "BIH", "Toronto Stadium"],
+  ["M04", "D", "2026-06-12", "USA", "PAR", "Los Angeles Stadium"],
+  ["M05", "C", "2026-06-13", "HAI", "SCO", "Boston Stadium"],
+  ["M06", "D", "2026-06-13", "AUS", "TUR", "BC Place Vancouver"],
+  ["M07", "C", "2026-06-13", "BRA", "MAR", "New York New Jersey Stadium"],
+  ["M08", "B", "2026-06-13", "QAT", "SUI", "San Francisco Bay Area Stadium"],
+  ["M09", "E", "2026-06-14", "CIV", "ECU", "Philadelphia Stadium"],
+  ["M10", "E", "2026-06-14", "GER", "CUW", "Houston Stadium"],
+  ["M11", "F", "2026-06-14", "NED", "JPN", "Dallas Stadium"],
+  ["M12", "F", "2026-06-14", "SWE", "TUN", "Estadio Monterrey"],
+  ["M13", "H", "2026-06-15", "KSA", "URU", "Miami Stadium"],
+  ["M14", "H", "2026-06-15", "ESP", "CPV", "Atlanta Stadium"],
+  ["M15", "G", "2026-06-15", "IRN", "NZL", "Los Angeles Stadium"],
+  ["M16", "G", "2026-06-15", "BEL", "EGY", "Seattle Stadium"],
+  ["M17", "I", "2026-06-16", "FRA", "SEN", "New York New Jersey Stadium"],
+  ["M18", "I", "2026-06-16", "IRQ", "NOR", "Boston Stadium"],
+  ["M19", "J", "2026-06-16", "ARG", "ALG", "Kansas City Stadium"],
+  ["M20", "J", "2026-06-16", "AUT", "JOR", "San Francisco Bay Area Stadium"],
+  ["M21", "L", "2026-06-17", "GHA", "PAN", "Toronto Stadium"],
+  ["M22", "L", "2026-06-17", "ENG", "CRO", "Dallas Stadium"],
+  ["M23", "K", "2026-06-17", "POR", "COD", "Houston Stadium"],
+  ["M24", "K", "2026-06-17", "UZB", "COL", "Mexico City Stadium"],
+  ["M25", "A", "2026-06-18", "CZE", "RSA", "Atlanta Stadium"],
+  ["M26", "B", "2026-06-18", "SUI", "BIH", "Los Angeles Stadium"],
+  ["M27", "B", "2026-06-18", "CAN", "QAT", "BC Place Vancouver"],
+  ["M28", "A", "2026-06-18", "MEX", "KOR", "Estadio Guadalajara"],
+  ["M29", "C", "2026-06-19", "BRA", "HAI", "Philadelphia Stadium"],
+  ["M30", "C", "2026-06-19", "SCO", "MAR", "Boston Stadium"],
+  ["M31", "D", "2026-06-19", "TUR", "PAR", "San Francisco Bay Area Stadium"],
+  ["M32", "D", "2026-06-19", "USA", "AUS", "Seattle Stadium"],
+  ["M33", "E", "2026-06-20", "GER", "CIV", "Toronto Stadium"],
+  ["M34", "E", "2026-06-20", "ECU", "CUW", "Kansas City Stadium"],
+  ["M35", "F", "2026-06-20", "NED", "SWE", "Houston Stadium"],
+  ["M36", "F", "2026-06-20", "TUN", "JPN", "Estadio Monterrey"],
+  ["M37", "H", "2026-06-21", "URU", "CPV", "Miami Stadium"],
+  ["M38", "H", "2026-06-21", "ESP", "KSA", "Atlanta Stadium"],
+  ["M39", "G", "2026-06-21", "BEL", "IRN", "Los Angeles Stadium"],
+  ["M40", "G", "2026-06-21", "NZL", "EGY", "BC Place Vancouver"],
+  ["M41", "I", "2026-06-22", "NOR", "SEN", "New York New Jersey Stadium"],
+  ["M42", "I", "2026-06-22", "FRA", "IRQ", "Philadelphia Stadium"],
+  ["M43", "J", "2026-06-22", "ARG", "AUT", "Dallas Stadium"],
+  ["M44", "J", "2026-06-22", "JOR", "ALG", "San Francisco Bay Area Stadium"],
+  ["M45", "L", "2026-06-23", "ENG", "GHA", "Boston Stadium"],
+  ["M46", "L", "2026-06-23", "PAN", "CRO", "Toronto Stadium"],
+  ["M47", "K", "2026-06-23", "POR", "UZB", "Houston Stadium"],
+  ["M48", "K", "2026-06-23", "COL", "COD", "Estadio Guadalajara"],
+  ["M49", "C", "2026-06-24", "SCO", "BRA", "Miami Stadium"],
+  ["M50", "C", "2026-06-24", "MAR", "HAI", "Atlanta Stadium"],
+  ["M51", "B", "2026-06-24", "SUI", "CAN", "BC Place Vancouver"],
+  ["M52", "B", "2026-06-24", "BIH", "QAT", "Seattle Stadium"],
+  ["M53", "A", "2026-06-24", "CZE", "MEX", "Mexico City Stadium"],
+  ["M54", "A", "2026-06-24", "RSA", "KOR", "Estadio Monterrey"],
+  ["M55", "E", "2026-06-25", "CUW", "CIV", "Philadelphia Stadium"],
+  ["M56", "E", "2026-06-25", "ECU", "GER", "New York New Jersey Stadium"],
+  ["M57", "F", "2026-06-25", "JPN", "SWE", "Dallas Stadium"],
+  ["M58", "F", "2026-06-25", "TUN", "NED", "Kansas City Stadium"],
+  ["M59", "D", "2026-06-25", "TUR", "USA", "Los Angeles Stadium"],
+  ["M60", "D", "2026-06-25", "PAR", "AUS", "San Francisco Bay Area Stadium"],
+  ["M61", "I", "2026-06-26", "NOR", "FRA", "Boston Stadium"],
+  ["M62", "I", "2026-06-26", "SEN", "IRQ", "Toronto Stadium"],
+  ["M63", "G", "2026-06-26", "EGY", "IRN", "Seattle Stadium"],
+  ["M64", "G", "2026-06-26", "NZL", "BEL", "BC Place Vancouver"],
+  ["M65", "H", "2026-06-26", "CPV", "KSA", "Houston Stadium"],
+  ["M66", "H", "2026-06-26", "URU", "ESP", "Estadio Guadalajara"],
+  ["M67", "L", "2026-06-27", "PAN", "ENG", "New York New Jersey Stadium"],
+  ["M68", "L", "2026-06-27", "CRO", "GHA", "Philadelphia Stadium"],
+  ["M69", "J", "2026-06-27", "ALG", "AUT", "Kansas City Stadium"],
+  ["M70", "J", "2026-06-27", "JOR", "ARG", "Dallas Stadium"],
+  ["M71", "K", "2026-06-27", "COL", "POR", "Miami Stadium"],
+  ["M72", "K", "2026-06-27", "COD", "UZB", "Atlanta Stadium"]
+];
+
+const KNOCKOUT_FIXTURES = [
+  ["M73", "Round of 32", "2026-06-28", "晋级队 1", "晋级队 2"],
+  ["M74", "Round of 32", "2026-06-28", "晋级队 3", "晋级队 4"],
+  ["M75", "Round of 32", "2026-06-29", "晋级队 5", "晋级队 6"],
+  ["M76", "Round of 32", "2026-06-29", "晋级队 7", "晋级队 8"],
+  ["M77", "Round of 32", "2026-06-30", "晋级队 9", "晋级队 10"],
+  ["M78", "Round of 32", "2026-06-30", "晋级队 11", "晋级队 12"],
+  ["M79", "Round of 32", "2026-07-01", "晋级队 13", "晋级队 14"],
+  ["M80", "Round of 32", "2026-07-01", "晋级队 15", "晋级队 16"],
+  ["M81", "Round of 32", "2026-07-02", "晋级队 17", "晋级队 18"],
+  ["M82", "Round of 32", "2026-07-02", "晋级队 19", "晋级队 20"],
+  ["M83", "Round of 32", "2026-07-03", "晋级队 21", "晋级队 22"],
+  ["M84", "Round of 32", "2026-07-03", "晋级队 23", "晋级队 24"],
+  ["M85", "Round of 32", "2026-07-03", "晋级队 25", "晋级队 26"],
+  ["M86", "Round of 32", "2026-07-03", "晋级队 27", "晋级队 28"],
+  ["M87", "Round of 32", "2026-07-03", "晋级队 29", "晋级队 30"],
+  ["M88", "Round of 32", "2026-07-03", "晋级队 31", "晋级队 32"],
+  ["M89", "Round of 16", "2026-07-04", "M73 胜者", "M74 胜者"],
+  ["M90", "Round of 16", "2026-07-04", "M75 胜者", "M76 胜者"],
+  ["M91", "Round of 16", "2026-07-05", "M77 胜者", "M78 胜者"],
+  ["M92", "Round of 16", "2026-07-05", "M79 胜者", "M80 胜者"],
+  ["M93", "Round of 16", "2026-07-06", "M81 胜者", "M82 胜者"],
+  ["M94", "Round of 16", "2026-07-06", "M83 胜者", "M84 胜者"],
+  ["M95", "Round of 16", "2026-07-07", "M85 胜者", "M86 胜者"],
+  ["M96", "Round of 16", "2026-07-07", "M87 胜者", "M88 胜者"],
+  ["M97", "Quarterfinal", "2026-07-09", "M89 胜者", "M90 胜者"],
+  ["M98", "Quarterfinal", "2026-07-10", "M91 胜者", "M92 胜者"],
+  ["M99", "Quarterfinal", "2026-07-11", "M93 胜者", "M94 胜者"],
+  ["M100", "Quarterfinal", "2026-07-11", "M95 胜者", "M96 胜者"],
+  ["M101", "Semifinal", "2026-07-14", "M97 胜者", "M98 胜者"],
+  ["M102", "Semifinal", "2026-07-15", "M99 胜者", "M100 胜者"],
+  ["M103", "Third place", "2026-07-18", "半决赛负者", "半决赛负者"],
+  ["M104", "Final", "2026-07-19", "半决赛胜者", "半决赛胜者"]
+];
+
+const state = {
+  filter: "today",
+  team: "all",
+  group: "all",
+  search: "",
+  teams: [],
+  matches: [],
+  predictions: new Map(),
+  standings: new Map(),
+  dataMeta: {}
+};
+
+const $ = (selector, root = document) => root.querySelector(selector);
+const $ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+function teamSeedToObject(items) {
+  if (!Array.isArray(items)) return FALLBACK_TEAMS;
+  return items.map((item) => ({
+    code: item.code,
+    name: item.name,
+    zhName: item.zhName,
+    group: item.group,
+    position: item.position,
+    fifaRank: item.fifaRank,
+    strength: item.strength,
+    focalPlayerId: item.focalPlayerId,
+    focalPlayer: item.focalPlayer
+  }));
+}
+
+async function fetchJson(path, fallback) {
+  const embedded = {
+    "./data/team-profiles.json": "team-profiles-json",
+    "./data/worldcup-live.json": "worldcup-live-json",
+    "./data/predictions.json": "predictions-json"
+  }[path];
+  if (embedded) {
+    const node = document.getElementById(embedded);
+    if (node?.textContent) return JSON.parse(node.textContent);
+  }
+  if (location.protocol === "file:") return fallback;
+  try {
+    const response = await fetch(path, { cache: "no-store" });
+    if (!response.ok) throw new Error(`${response.status} ${path}`);
+    return await response.json();
+  } catch (error) {
+    console.warn(error);
+    return fallback;
+  }
+}
+
+function makeTeamMap() {
+  return new Map(state.teams.map((team) => [team.code, team]));
+}
+
+function fixtureToMatch(fixture) {
+  const [id, group, localDate, home, away, venue, status = "SCHEDULED", homeScore = null, awayScore = null] = fixture;
+  return {
+    id,
+    stage: "Group",
+    group,
+    localDate,
+    home,
+    away,
+    venue,
+    status,
+    score: homeScore === null ? null : { home: homeScore, away: awayScore }
+  };
+}
+
+function knockoutToMatch(fixture) {
+  const [id, stage, localDate, homeSlot, awaySlot] = fixture;
+  return {
+    id,
+    stage,
+    localDate,
+    home: null,
+    away: null,
+    homeSlot,
+    awaySlot,
+    venue: "官方接口待更新",
+    status: "SCHEDULED",
+    score: null
+  };
+}
+
+function mergeLiveData(liveData) {
+  const baseGroup = (liveData.groupFixtures?.length ? liveData.groupFixtures : GROUP_FIXTURES).map((fixture) => {
+    if (Array.isArray(fixture)) return fixtureToMatch(fixture);
+    return { ...fixture };
+  });
+  const baseKnockout = (liveData.knockoutFixtures?.length ? liveData.knockoutFixtures : KNOCKOUT_FIXTURES).map((fixture) => {
+    if (Array.isArray(fixture)) return knockoutToMatch(fixture);
+    return { ...fixture };
+  });
+  const overrides = new Map((liveData.results || []).map((match) => [match.id, match]));
+  return [...baseGroup, ...baseKnockout].map((match) => ({ ...match, ...(overrides.get(match.id) || {}) }));
+}
+
+function isToday(match) {
+  return match.localDate === todayLocal();
+}
+
+function hasPassed(match) {
+  return match.localDate < todayLocal();
+}
+
+function todayLocal() {
+  const today = new Date();
+  const offset = today.getTimezoneOffset() * 60000;
+  return new Date(today.getTime() - offset).toISOString().slice(0, 10);
+}
+
+function statusLabel(match) {
+  if (match.status === "IN_PLAY" || match.status === "PAUSED") return "直播中";
+  if (match.status === "FINISHED") return "已完赛";
+  if (isToday(match)) return "今日";
+  if (hasPassed(match) && match.stage === "Group") return "待同步";
+  return match.stage === "Group" ? `G组 ${match.group}` : match.stage;
+}
+
+function formatDate(dateText) {
+  const date = new Date(`${dateText}T12:00:00Z`);
+  return new Intl.DateTimeFormat("zh-CN", { month: "short", day: "numeric", weekday: "short" }).format(date);
+}
+
+function computeStandings(matches) {
+  const map = new Map();
+  const groups = [...new Set(state.teams.map((team) => team.group))].sort();
+  groups.forEach((group) => {
+    const rows = state.teams
+      .filter((team) => team.group === group)
+      .map((team) => ({
+        code: team.code,
+        team,
+        played: 0,
+        won: 0,
+        drawn: 0,
+        lost: 0,
+        gf: 0,
+        ga: 0,
+        gd: 0,
+        points: 0
+      }));
+    map.set(group, rows);
+  });
+
+  const index = new Map();
+  map.forEach((rows) => rows.forEach((row) => index.set(row.code, row)));
+
+  matches
+    .filter((match) => match.stage === "Group" && match.status === "FINISHED" && match.score)
+    .forEach((match) => {
+      const home = index.get(match.home);
+      const away = index.get(match.away);
+      if (!home || !away) return;
+      home.played += 1;
+      away.played += 1;
+      home.gf += match.score.home;
+      home.ga += match.score.away;
+      away.gf += match.score.away;
+      away.ga += match.score.home;
+      if (match.score.home > match.score.away) {
+        home.won += 1;
+        away.lost += 1;
+        home.points += 3;
+      } else if (match.score.home < match.score.away) {
+        away.won += 1;
+        home.lost += 1;
+        away.points += 3;
+      } else {
+        home.drawn += 1;
+        away.drawn += 1;
+        home.points += 1;
+        away.points += 1;
+      }
+      home.gd = home.gf - home.ga;
+      away.gd = away.gf - away.ga;
+    });
+
+  map.forEach((rows) => rows.sort((a, b) =>
+    b.points - a.points ||
+    b.gd - a.gd ||
+    b.gf - a.gf ||
+    a.team.fifaRank - b.team.fifaRank
+  ));
+  state.standings = map;
+}
+
+function standingPoints(code) {
+  for (const rows of state.standings.values()) {
+    const row = rows.find((item) => item.code === code);
+    if (row) return row.points;
+  }
+  return 0;
+}
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function roundedProbabilities(homeRaw, drawRaw, awayRaw) {
+  const total = homeRaw + drawRaw + awayRaw;
+  let home = Math.round((homeRaw / total) * 100);
+  let draw = Math.round((drawRaw / total) * 100);
+  let away = Math.round((awayRaw / total) * 100);
+  const delta = 100 - home - draw - away;
+  const maxKey = [["home", home], ["draw", draw], ["away", away]].sort((a, b) => b[1] - a[1])[0][0];
+  if (maxKey === "home") home += delta;
+  if (maxKey === "draw") draw += delta;
+  if (maxKey === "away") away += delta;
+  return { homeWin: home, draw, awayWin: away };
+}
+
+function computePrediction(match) {
+  const teams = makeTeamMap();
+  const homeTeam = teams.get(match.home);
+  const awayTeam = teams.get(match.away);
+  if (!homeTeam || !awayTeam) {
+    return {
+      matchId: match.id,
+      homeWin: null,
+      draw: null,
+      awayWin: null,
+      confidence: "待定",
+      factors: ["淘汰赛对阵尚未确定，下一次数据刷新后自动补齐。"],
+      analysisZh: "暂无可靠数据：参赛双方尚未由官方接口确定。"
+    };
+  }
+
+  const hostBonus = ["MEX", "CAN", "USA"].includes(homeTeam.code) ? 55 : ["MEX", "CAN", "USA"].includes(awayTeam.code) ? -55 : 0;
+  const groupForm = (standingPoints(homeTeam.code) - standingPoints(awayTeam.code)) * 18;
+  const diff = homeTeam.strength - awayTeam.strength + hostBonus + groupForm;
+  const drawRaw = clamp(0.27 - Math.abs(diff) / 1300, 0.16, 0.31);
+  const homeNoDraw = 1 / (1 + Math.pow(10, -diff / 420));
+  let homeRaw = (1 - drawRaw) * homeNoDraw;
+  let awayRaw = (1 - drawRaw) * (1 - homeNoDraw);
+  let draw = drawRaw;
+
+  if (match.status === "IN_PLAY" && match.score) {
+    const minute = clamp(Number(match.minute || 45), 1, 100);
+    const scoreDiff = match.score.home - match.score.away;
+    const liveWeight = minute / 95;
+    homeRaw += clamp(scoreDiff * 0.22 * liveWeight, -0.36, 0.46);
+    awayRaw += clamp(-scoreDiff * 0.22 * liveWeight, -0.36, 0.46);
+    draw += scoreDiff === 0 ? 0.08 * liveWeight : -0.09 * liveWeight;
+  }
+
+  const probs = roundedProbabilities(Math.max(0.03, homeRaw), Math.max(0.06, draw), Math.max(0.03, awayRaw));
+  const leader = probs.homeWin >= probs.awayWin ? homeTeam : awayTeam;
+  const edge = Math.abs(probs.homeWin - probs.awayWin);
+  const confidence = edge >= 26 ? "高" : edge >= 13 ? "中" : "谨慎";
+  const factors = [
+    `强度差：${homeTeam.zhName} ${homeTeam.strength} / ${awayTeam.zhName} ${awayTeam.strength}`,
+    `FIFA 排名：${homeTeam.zhName} ${homeTeam.fifaRank}，${awayTeam.zhName} ${awayTeam.fifaRank}`,
+    hostBonus ? "主办国赛程环境已计入小幅加成" : "无主办国加成",
+    `小组积分影响：${homeTeam.zhName} ${standingPoints(homeTeam.code)} 分，${awayTeam.zhName} ${standingPoints(awayTeam.code)} 分`
+  ];
+  const analysisZh = `${leader.zhName}在基础评分和当前积分形势里略占上风，但模型保留平局基线，避免把单场杯赛的不确定性压得过低。关键看${homeTeam.focalPlayer}与${awayTeam.focalPlayer}能否把转换机会变成高质量射门。`;
+
+  return {
+    matchId: match.id,
+    modelVersion: "transparent-elo-v1",
+    generatedAt: state.dataMeta.generatedAt || new Date().toISOString(),
+    ...probs,
+    confidence,
+    factors,
+    analysisZh
+  };
+}
+
+function teamLabel(code, slot = "待定") {
+  const team = makeTeamMap().get(code);
+  if (!team) return { primary: slot, secondary: "官方接口待更新" };
+  return { primary: team.zhName, secondary: `${team.name} · ${team.code}` };
+}
+
+function renderTeamRow(match, side) {
+  const code = match[side];
+  const slot = match[`${side}Slot`];
+  const team = teamLabel(code, slot);
+  const score = match.score ? match.score[side === "home" ? "home" : "away"] : "";
+  return `
+    <div class="team-row">
+      <div class="team-name">
+        <strong>${escapeHtml(team.primary)}</strong>
+        <span>${escapeHtml(team.secondary)}</span>
+      </div>
+      <div class="score">${score}</div>
+    </div>
+  `;
+}
+
+function flagUrl(code) {
+  const flagCode = FLAG_CODES[code];
+  return flagCode ? `https://flagcdn.com/w640/${flagCode}.png` : "";
+}
+
+function renderFlag(teamCode, slot = "待定") {
+  const team = makeTeamMap().get(teamCode);
+  if (!team) {
+    return `
+      <div class="flag-card is-pending">
+        <div class="flag-frame"><div class="flag-placeholder">${escapeHtml(slot)}</div></div>
+        <div class="flag-name">官方接口待更新</div>
+        <div class="flag-meta">暂无可靠数据</div>
+      </div>
+    `;
+  }
+  const src = flagUrl(team.code);
+  return `
+    <div class="flag-card" data-team-code="${escapeHtml(team.code)}">
+      <div class="flag-frame">
+        ${src ? `<img src="${escapeAttribute(src)}" alt="${escapeAttribute(team.zhName)}国旗" loading="lazy">` : `<div class="flag-placeholder">${escapeHtml(team.code)}</div>`}
+      </div>
+      <div class="flag-name">${escapeHtml(team.zhName)}</div>
+      <div class="flag-meta">${escapeHtml(team.name)} · ${escapeHtml(team.code)}</div>
+    </div>
+  `;
+}
+
+function renderProbabilities(prediction, match) {
+  if (prediction.homeWin === null) {
+    return `<div class="empty">对阵确定后显示概率</div>`;
+  }
+  const home = teamLabel(match.home).primary;
+  const away = teamLabel(match.away).primary;
+  return [
+    ["home", `${home}胜`, prediction.homeWin],
+    ["draw", "平局", prediction.draw],
+    ["away", `${away}胜`, prediction.awayWin]
+  ].map(([key, label, value]) => `
+    <div class="prob-row">
+      <span>${escapeHtml(label)}</span>
+      <div class="prob-track"><div class="prob-fill ${key}" style="width:${value}%"></div></div>
+      <strong>${value}%</strong>
+    </div>
+  `).join("");
+}
+
+function visibleMatches() {
+  const term = state.search.trim().toLowerCase();
+  return state.matches.filter((match) => {
+    const teams = makeTeamMap();
+    const home = teams.get(match.home);
+    const away = teams.get(match.away);
+    const haystack = [match.id, match.group, match.stage, match.venue, home?.name, home?.zhName, home?.focalPlayer, away?.name, away?.zhName, away?.focalPlayer, match.homeSlot, match.awaySlot]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    if (state.filter === "today" && !(isToday(match) || match.status === "IN_PLAY")) return false;
+    if (state.filter === "group" && match.stage !== "Group") return false;
+    if (state.filter === "knockout" && match.stage === "Group") return false;
+    if (state.team !== "all" && match.home !== state.team && match.away !== state.team) return false;
+    if (state.group !== "all" && match.group !== state.group) return false;
+    if (term && !haystack.includes(term)) return false;
+    return true;
+  });
+}
+
+function renderMatches() {
+  const grid = $("#match-grid");
+  const template = $("#match-card-template");
+  const matches = visibleMatches();
+  $("#match-count").textContent = `${matches.length} 场`;
+  grid.innerHTML = "";
+
+  if (!matches.length) {
+    grid.innerHTML = `<div class="empty">没有符合条件的比赛</div>`;
+    return;
+  }
+
+  matches.forEach((match) => {
+    const prediction = state.predictions.get(match.id) || computePrediction(match);
+    const card = template.content.firstElementChild.cloneNode(true);
+    const chip = $(".chip", card);
+    chip.textContent = statusLabel(match);
+    if (match.status === "IN_PLAY") chip.classList.add("live");
+    $(".match-date", card).textContent = `${match.id} · ${formatDate(match.localDate)} · ${match.venue}`;
+    $(".teams", card).innerHTML = renderTeamRow(match, "home") + renderTeamRow(match, "away");
+    $(".flag-duel", card).innerHTML = renderFlag(match.home, match.homeSlot) + renderFlag(match.away, match.awaySlot);
+    $(".probabilities", card).innerHTML = renderProbabilities(prediction, match);
+    $(".analysis", card).textContent = prediction.analysisZh;
+    $(".detail-button", card).addEventListener("click", () => openDialog(match, prediction));
+    grid.append(card);
+  });
+}
+
+function renderChampionGrid() {
+  const grid = $("#champion-grid");
+  if (!grid) return;
+  const ranked = state.teams
+    .slice()
+    .sort((a, b) => b.strength - a.strength || a.fifaRank - b.fifaRank)
+    .slice(0, 8);
+  const total = ranked.reduce((sum, team, index) => sum + championScore(team, index), 0);
+  grid.innerHTML = ranked.map((team, index) => {
+    const percent = total ? Math.round((championScore(team, index) / total) * 100) : 0;
+    return `
+      <article class="champion-card" style="--bar:${Math.max(18, percent * 2.2)}%">
+        <div class="rank">#${String(index + 1).padStart(2, "0")} · ${escapeHtml(team.code)}</div>
+        <h3>${escapeHtml(team.zhName)} / ${escapeHtml(team.name)}</h3>
+        <strong>${percent}%</strong>
+        <p class="metric-label">STR ${team.strength} · FIFA ${team.fifaRank}</p>
+      </article>
+    `;
+  }).join("");
+}
+
+function championScore(team, index) {
+  const pathBonus = 1 + Math.max(0, 5 - (team.position || 4)) * 0.045;
+  const hostBonus = ["MEX", "CAN", "USA"].includes(team.code) ? 1.08 : 1;
+  const rankBonus = Math.max(0.72, 1.1 - index * 0.04);
+  return Math.pow(team.strength, 2.05) * pathBonus * hostBonus * rankBonus;
+}
+
+function renderStandings() {
+  const container = $("#standings");
+  container.innerHTML = "";
+  state.standings.forEach((rows, group) => {
+    const section = document.createElement("section");
+    section.className = "standings-group";
+    section.innerHTML = `
+      <h3>Group ${group}</h3>
+      <table>
+        <thead><tr><th>队</th><th>赛</th><th>净</th><th>分</th></tr></thead>
+        <tbody>
+          ${rows.map((row) => `
+            <tr>
+              <td>${escapeHtml(row.team.zhName)}</td>
+              <td>${row.played}</td>
+              <td>${row.gd}</td>
+              <td>${row.points}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    `;
+    container.append(section);
+  });
+}
+
+function renderInsightStream() {
+  const container = $("#insight-stream");
+  if (!container) return;
+  const today = todayLocal();
+  const candidates = state.matches
+    .filter((match) => match.home && match.away)
+    .sort((a, b) => {
+      const da = Math.abs(new Date(`${a.localDate}T00:00:00`).getTime() - new Date(`${today}T00:00:00`).getTime());
+      const db = Math.abs(new Date(`${b.localDate}T00:00:00`).getTime() - new Date(`${today}T00:00:00`).getTime());
+      return da - db || a.id.localeCompare(b.id);
+    })
+    .slice(0, 5);
+  container.innerHTML = candidates.map((match) => {
+    const prediction = state.predictions.get(match.id) || computePrediction(match);
+    const home = teamLabel(match.home).primary;
+    const away = teamLabel(match.away).primary;
+    const leader = prediction.homeWin === null ? "待定" : prediction.homeWin >= prediction.awayWin ? home : away;
+    const edge = prediction.homeWin === null ? "等待对阵" : `${leader} ${Math.max(prediction.homeWin, prediction.awayWin)}%`;
+    return `
+      <article class="stream-card">
+        <time>${escapeHtml(match.id)} · ${escapeHtml(formatDate(match.localDate))}</time>
+        <h3>${escapeHtml(home)} vs ${escapeHtml(away)}</h3>
+        <p>${escapeHtml(edge)} · ${escapeHtml(prediction.confidence)}置信度。${escapeHtml(prediction.analysisZh)}</p>
+      </article>
+    `;
+  }).join("");
+}
+
+function openDialog(match, prediction) {
+  const dialog = $("#match-dialog");
+  $("#dialog-kicker").textContent = `${match.id} · ${statusLabel(match)} · ${match.venue}`;
+  $("#dialog-title").textContent = `${teamLabel(match.home, match.homeSlot).primary} vs ${teamLabel(match.away, match.awaySlot).primary}`;
+  $("#dialog-body").innerHTML = `
+    <div class="dialog-grid">
+      <section>
+        <div class="probabilities">${renderProbabilities(prediction, match)}</div>
+        <p class="analysis">${escapeHtml(prediction.analysisZh)}</p>
+      </section>
+      <section>
+        <ul class="factor-list">
+          ${prediction.factors.map((factor) => `<li>${escapeHtml(factor)}</li>`).join("")}
+        </ul>
+      </section>
+    </div>
+    <div class="flag-duel">${renderFlag(match.home, match.homeSlot)}${renderFlag(match.away, match.awaySlot)}</div>
+  `;
+  if (typeof dialog.showModal === "function") dialog.showModal();
+}
+
+function populateFilters() {
+  const teamSelect = $("#team-filter");
+  teamSelect.innerHTML = `<option value="all">全部球队</option>` + state.teams
+    .slice()
+    .sort((a, b) => a.group.localeCompare(b.group) || a.position - b.position)
+    .map((team) => `<option value="${team.code}">${team.zhName} · ${team.code}</option>`)
+    .join("");
+
+  const groupSelect = $("#group-filter");
+  const groups = [...new Set(state.teams.map((team) => team.group))].sort();
+  groupSelect.innerHTML = `<option value="all">全部小组</option>` + groups.map((group) => `<option value="${group}">Group ${group}</option>`).join("");
+}
+
+function updateMetrics() {
+  $("#metric-total").textContent = state.matches.length;
+  $("#metric-today").textContent = state.matches.filter((match) => isToday(match) || match.status === "IN_PLAY").length;
+  $("#metric-finished").textContent = state.matches.filter((match) => match.status === "FINISHED").length;
+  const modelMetric = $("#metric-model");
+  if (modelMetric) modelMetric.textContent = "ELO";
+  $("#last-updated").textContent = state.dataMeta.generatedAt ? new Intl.DateTimeFormat("zh-CN", {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(new Date(state.dataMeta.generatedAt)) : "静态快照";
+  $("#data-status").textContent = state.dataMeta.dataMode || "GitHub Pages 静态数据";
+  $("#model-version").textContent = state.dataMeta.modelVersion || "transparent-elo-v1";
+}
+
+function bindEvents() {
+  $(".tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      $(".tab").forEach((button) => button.classList.remove("is-active"));
+      tab.classList.add("is-active");
+      state.filter = tab.dataset.filter;
+      renderMatches();
+    });
+  });
+  $("#team-filter").addEventListener("change", (event) => {
+    state.team = event.target.value;
+    renderMatches();
+  });
+  $("#group-filter").addEventListener("change", (event) => {
+    state.group = event.target.value;
+    renderMatches();
+  });
+  $("#search-input").addEventListener("input", (event) => {
+    state.search = event.target.value;
+    renderMatches();
+  });
+  $("#dialog-close").addEventListener("click", () => $("#match-dialog").close());
+}
+
+function initBackdropVideo() {
+  const video = $("#worldcup-bg-video");
+  if (!video) return;
+  video.addEventListener("canplay", () => {
+    document.body.classList.add("has-backdrop-video");
+    document.body.classList.remove("no-backdrop-video");
+  });
+  video.addEventListener("error", () => {
+    document.body.classList.add("no-backdrop-video");
+    document.body.classList.remove("has-backdrop-video");
+    console.info("Background video not found. Add an authorized MP4 at docs/assets/media/worldcup-bg.mp4.");
+  });
+  video.play?.().catch(() => {
+    document.body.classList.add("no-backdrop-video");
+    document.body.classList.remove("has-backdrop-video");
+  });
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value).replace(/`/g, "&#96;");
+}
+
+async function init() {
+  initBackdropVideo();
+  const [teamsData, liveData, predictionData] = await Promise.all([
+    fetchJson("./data/team-profiles.json", { teams: FALLBACK_TEAMS }),
+    fetchJson("./data/worldcup-live.json", { groupFixtures: GROUP_FIXTURES, knockoutFixtures: KNOCKOUT_FIXTURES, generatedAt: null }),
+    fetchJson("./data/predictions.json", { predictions: [] })
+  ]);
+
+  state.teams = teamSeedToObject(teamsData.teams);
+  state.matches = mergeLiveData(liveData);
+  state.dataMeta = {
+    generatedAt: liveData.generatedAt,
+    dataMode: liveData.dataMode,
+    modelVersion: predictionData.modelVersion
+  };
+  state.predictions = new Map((predictionData.predictions || []).map((prediction) => [prediction.matchId, prediction]));
+  computeStandings(state.matches);
+  populateFilters();
+  updateMetrics();
+  renderChampionGrid();
+  renderStandings();
+  renderInsightStream();
+  renderMatches();
+  bindEvents();
+}
+
+init();
+
+</script>
+  </body>
+</html>
